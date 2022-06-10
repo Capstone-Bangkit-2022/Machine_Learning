@@ -2,12 +2,12 @@
 
 ## Machine Learning Team:
 ### Meet the team:
-   1. Zenix Fajar Luthfiansyah (M2008Q0853)
+   1. Zenix Fajar Luthfiansyah (M2008Q0853) - [Github profil](https://github.com/zenyxfajar)
         - Pre-Processing data
         - Build model
         - Train and test model
         - Model deployment
-   2. Yeni Rismawati (M2227G2097)
+   2. Yeni Rismawati (M2227G2097) - [Github profil](https://github.com/yenirsmwati)
         - Do what 
 
 ### Dataset used in this project:
