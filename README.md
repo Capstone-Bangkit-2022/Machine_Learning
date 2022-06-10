@@ -2,13 +2,13 @@
 
 ## Machine Learning Team:
 ### Meet the team:
-   1. Name 1
+   1. Zenix Fajar Luthfiansyah (M2008Q0853)
         - Do what
-   2. Name 2
+   2. Yeni Rismawati (M2227G2097)
         - Do what
 
 ### Dataset used in this project:
-   - Dataset 1
+   - In this project we use a [GARBAGE DATASET](https://www.kaggle.com/datasets/mostafaabla/garbage-classification) from kaggle.com
 
 ### The workflow (alur kerja)
 
