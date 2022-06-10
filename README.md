@@ -30,6 +30,7 @@
 
 ### Transfer learning used
    - The model that we used is transfer learning architecture : `MobileNet V2`. The architecture of `MobileNet V2` has a lightweight and implementable performance on mobile devices. In this model, the loss used is `categorical cross-entropy` because we use multiclass classification. And in this model, the best optimizer is `Adam`.
-
+- train model use --------
+- for deployment -----
 
 ### Output
