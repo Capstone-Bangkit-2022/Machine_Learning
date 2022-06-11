@@ -1,0 +1,11 @@
+Pribadi:
+gcloud builds submit --tag gcr.io/deploy-versi-2/predictions
+gcloud run deploy --image  gcr.io/deploy-versi-2/predictions --platform managed
+API: https://dopredict-xqk4i5jk2a-uc.a.run.app
+
+===========================================================================================================
+
+Bangkit:
+gcloud builds submit --tag gcr.io/alpine-flare-346119/predictions
+gcloud run deploy --image  gcr.io/alpine-flare-346119/predictions --platform managed
+API : https://dopredict-uzgmpvvmea-uc.a.run.app

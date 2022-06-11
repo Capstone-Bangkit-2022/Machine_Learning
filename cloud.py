@@ -8,9 +8,6 @@ from PIL import Image
 from flask import Flask, request, jsonify
 from tensorflow import keras
 
-# import urllib.request
-# import tensorflow.keras.preprocessing
-
 class_name = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
 
 os.environ["TFHUB_CACHE_DIR"] = "/tmp/model"
@@ -35,13 +32,8 @@ def run_inference(img_path):
 
 app = Flask(__name__)
 
-# UPLOAD_FOLDER = 'static/uploads/'
-# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-# ALLOWED_EXTENSIONS = set(['png', 'jpg', 'gif'])
-
-
 @app.route("/", methods=['GET', 'POST'])
-def index():
+def predictions():
     if request.method == 'POST':
 
         file = request.files.get('file')
@@ -59,29 +51,38 @@ def index():
             predictions_result = ""
 
             if result == 0:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
-                # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Dry and flatten it, stack it together and tie properly".format(class_name[result])
+                # print("Garbage categorized as: {} clean thoroughly and sun-dry".format(class_name[result]))
             elif result == 1:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Clean and wash with soap, put it in secure box \n " \
+                                     "If broken put in separated box".format(class_name[result])
                 # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
             elif result == 2:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Clean and dry \n" \
+                                     "DO NOT INCLUDE HAZARDOUS MATERIAL SUCH AS BATTERIES!".format(class_name[result])
                 # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
             elif result == 3:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Dry and flatten it, stack it together and tie properly".format(class_name[result])
                 # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
             elif result == 4:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Clean with soap and dry \n" \
+                                     "Place in one box or container".format(class_name[result])
                 # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
             elif result == 5:
-                predictions_result = "Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result])
+                predictions_result = "Garbage categorized as: {} \n" \
+                                     "Place in plastic bag and tie properly".format(class_name[result])
                 # print("Garbage categorized as: {}, clean thoroughly and sun-dry".format(class_name[result]))
 
             return jsonify(predictions_result)
 
         except Exception as e:
             return jsonify({"error": str(e)})
-    return "BANZAI"
+    return "IT'S UP AND READY TO GO!"
 
 
 if __name__ == "__main__":
