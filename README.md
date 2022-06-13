@@ -25,7 +25,10 @@
 
 ### Transfer learning used
    - The model that we used is transfer learning architecture : `MobileNet V2`. The architecture of `MobileNet V2` has a lightweight and implementable performance on mobile devices. In this model, the loss used is `categorical cross-entropy` because we use multiclass classification. And in this model, the best optimizer is `Adam`.
-- We train this model with `batch size: 16`, `epoch: 15` and we get more than 90% `accuracy` for Training and Validation.
-- For deployment, we used `RESTful API` with `Flask-framework`. The method that we use is `GET` for blablabla and `POST` for blablabla.
+   - We train this model with `batch size: 16`, `epoch: 15` and we get more than 90% `accuracy` for Training and Validation.
+### Deployment
+   - For deployment, we used `RESTful API` with `Flask-framework`. The method that we use is `GET` for get the data sent by user using the `POST` request and `POST` for requesting change in source, also can be used for sending data, in this case we use `POST` to send image data to be processed by application.
+   - Application use Cloud Run API to run the application.
+   - API : https://dopredict-uzgmpvvmea-uc.a.run.app
 
 ### Output
