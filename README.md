@@ -32,3 +32,8 @@
    - API : https://dopredict-uzgmpvvmea-uc.a.run.app
 
 ### Output
+   - Build accuracy
+   ![val and test acc](https://user-images.githubusercontent.com/101339523/173274341-268779f1-c4ac-4ab9-9319-237d60f27a99.png)
+
+   - Test by sending `POST` request to Cloud Run API of application
+   ![hasil deploy local](https://user-images.githubusercontent.com/101339523/173274358-65574ea7-cccd-4a6c-9c79-f6aefad78d73.jpg)
