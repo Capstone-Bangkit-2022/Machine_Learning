@@ -3,11 +3,13 @@
 ## Machine Learning Team:
 ### Meet the team:
    1. Zenix Fajar Luthfiansyah (M2008Q0853) - [Github profil](https://github.com/zenyxfajar)
-        - Pre-Processing data
         - Build model
         - Train and test model
         - Model deployment
    2. Yeni Rismawati (M2227G2097) - [Github profil](https://github.com/yenirsmwati)
+        - Acquiring dataset
+        - Analyzing dataset
+        - Currating additional dataset
 ### Dataset used in this project:
    -  [Garbage dataset 1](https://www.kaggle.com/datasets/mostafaabla/garbage-classification)
    -  [Garbage dataset 2](https://www.kaggle.com/code/aadhavvignesh/pytorch-garbage-classification-95-accuracy/data)
