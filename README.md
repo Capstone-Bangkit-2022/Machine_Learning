@@ -2,11 +2,11 @@
 
 ## Machine Learning Team:
 ### Meet the team:
-   1. Zenix Fajar Luthfiansyah (M2008Q0853) - [Github profil](https://github.com/zenyxfajar)
+   1. Zenix Fajar Luthfiansyah (M2008Q0853) - [Github profile](https://github.com/zenyxfajar)
         - Build model
         - Train and test model
         - Model deployment
-   2. Yeni Rismawati (M2227G2097) - [Github profil](https://github.com/yenirsmwati)
+   2. Yeni Rismawati (M2227G2097) - [Github profile](https://github.com/yenirsmwati)
         - Acquiring dataset
         - Analyzing dataset
         - Currating additional dataset
