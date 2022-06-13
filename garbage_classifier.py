@@ -9,7 +9,7 @@ from tensorflow import keras
 
 DATA_DIR = 'C:\\Users\\zenix\\Documents\\Bangkit\\cloud\\garbage_classification'
 IMAGE_SIZE = (224, 224)
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 # OUT_SHAPE = 1280
 AUTO_TUNE = tf.data.AUTOTUNE
 
