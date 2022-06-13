@@ -35,6 +35,7 @@
 
 ### Output
    - Build accuracy
+   
    ![val and test acc 1](https://user-images.githubusercontent.com/101339523/173275671-04024887-cd35-4481-9a7d-5ca7b9c63205.jpg)
 
    - Test by sending `POST` request to Cloud Run API of application
